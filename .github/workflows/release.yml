@@ -18,7 +18,8 @@ jobs:
       - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version-file: "package.json"
+          cache: "npm"
 
       - name: Install Dependencies
         run: npm install
