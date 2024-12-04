@@ -57,7 +57,7 @@ The following inputs can be defined in the `action.yml` file:
 | Input Name | Description | Default | Required |
 |------------|-------------|---------|----------|
 | `tokens-path` | Path to the tokens json files | `./tokens/` | true |
-| `build-path` | Path to output the transformed tokens | `./lib/` | true |
+| `build-path` | Path to output the transformed tokens | `./build/` | true |
 | `tokens-export-type` | Type of Tokens Studio export: "single" or "multiple" | `single` | false |
 
 ## License
