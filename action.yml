@@ -1,5 +1,8 @@
 name: 'Token Tinker'
 description: 'Transform design tokens from Tokens Studio using Style Dictionary'
+branding:
+  icon: 'command'
+  color: 'gray-dark'
 inputs:
   tokens-path:
     description: 'Path to the tokens json files. Defaults to ./tokens/'
