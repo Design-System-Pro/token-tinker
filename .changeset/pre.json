@@ -4,5 +4,8 @@
   "initialVersions": {
     "@design-system-pro/token-tinker": "0.0.0"
   },
-  "changesets": []
+  "changesets": [
+    "early-geckos-sit",
+    "hip-snakes-appear"
+  ]
 }
