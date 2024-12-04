@@ -1,12 +1,13 @@
 {
   "name": "@design-system-pro/token-tinker",
   "license": "GNU GPLv3",
-  "type": "module",
   "version": "0.0.0",
+  "type": "module",
   "description": "GitHub Action to transform Design Tokens from Tokens Studio using Style Dictionary",
   "main": "dist/main.js",
   "scripts": {
     "start": "ncc run src/main.ts",
+    "test": "act -W '.github/workflows/test.yml' --container-architecture linux/arm64 --artifact-server-path /tmp/artifacts",
     "build": "tsc && ncc build src/main.ts --minify --source-map"
   },
   "keywords": [

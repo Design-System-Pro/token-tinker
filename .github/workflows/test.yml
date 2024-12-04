@@ -17,31 +17,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Enable Corepack
-        run: corepack enable
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version-file: "package.json"
-          cache: "pnpm"
+          cache: "npm"
 
       - name: Install Dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build
-        run: pnpm build
+        run: npm run build
 
-      # - name: Run GitHub Action
-      #   uses: ./
-      #   with:
-      #     root-dir: "./tokens"
-      #     file-name: "tokens.json"
-      #     output-path: "./lib"
-      - uses: obvious/token-weaver@v0.2.0
+      - name: Run GitHub Action
+        uses: ./
         with:
-          # For example, let's say you have a repo called `figma_tokens` and you have saved your tokens
-          # in a folder called `tokens` in that repo (`figma_tokens/tokens/`). You can just pass `tokens`,
-          # since you have checked out the repo in 2nd step.
-          tokens_path: "examples"
-          output_path: "lib"
+          tokens-path: "./example/"
+          build-path: "./build/"
+
+      - name: Archive tinker results
+        uses: actions/upload-artifact@v4
+        with:
+          name: result
+          path: build

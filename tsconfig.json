@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
+    "target": "es2015",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "isolatedModules": true,
     "strict": true,

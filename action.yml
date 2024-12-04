@@ -15,4 +15,4 @@ inputs:
     default: 'single'
 runs:
   using: 'node20'
-  main: 'dist/main.js'
+  main: 'dist/index.js'
