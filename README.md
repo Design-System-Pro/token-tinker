@@ -35,7 +35,7 @@ jobs:
   transform:
     runs-on: ubuntu-latest
     steps:
-      - uses: @design-system-pro/token-tinker@v1
+      - uses: @design-system-pro/token-tinker@v0.1.0
         with:
           tokens-path: './tokens/'
           build-path: './build/'
