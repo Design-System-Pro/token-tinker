@@ -1,6 +1,6 @@
 {
   "name": "@design-system-pro/token-tinker",
-  "license": "GNU GPLv3",
+  "license": "MIT license",
   "version": "0.0.0",
   "type": "module",
   "description": "GitHub Action to transform Design Tokens from Tokens Studio using Style Dictionary",
