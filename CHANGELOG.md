@@ -1,5 +1,11 @@
 # @design-system-pro/token-tinker
 
+## 0.1.0-next.2
+
+### Patch Changes
+
+- [`45b94c7`](https://github.com/Design-System-Pro/token-tinker/commit/45b94c747f577f3b952fea6b0f2f13f50dc97ddc) Thanks [@tomasfrancisco](https://github.com/tomasfrancisco)! - update readme
+
 ## 0.1.0-next.1
 
 ### Patch Changes
