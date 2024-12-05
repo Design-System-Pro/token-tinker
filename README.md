@@ -35,11 +35,22 @@ jobs:
   transform:
     runs-on: ubuntu-latest
     steps:
-      - uses: @design-system-pro/token-tinker@v0.1.0
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: @design-system-pro/token-tinker@v0.1.0-next.1
         with:
           tokens-path: './tokens/'
           build-path: './build/'
           tokens-export-type: 'single'
+
+      # You can replace where the build goes according to your needs 👇
+      # As an example, you can download it manually from your github action runner.
+      - name: Archive tinker results
+        uses: actions/upload-artifact@v4
+        with:
+          name: result
+          path: build
 ```
 
 ## Configuration
