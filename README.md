@@ -38,7 +38,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: @design-system-pro/token-tinker@v0.1.0-next.2
+      - uses: Design-System-Pro/token-tinker@0.1.0-next.2
         with:
           tokens-path: './tokens/'
           build-path: './build/'
