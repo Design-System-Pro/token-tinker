@@ -3,12 +3,13 @@ import { expandTypesMap, register } from "@tokens-studio/sd-transforms";
 import StyleDictionary from "style-dictionary";
 
 async function run(): Promise<void> {
-  const tokensPath = core.getInput("tokens-path") || "./tokens/";
+  const tokensPath = core.getInput("tokens-path") || "./example/";
   const buildPath = core.getInput("build-path") || "./build/";
   const isSingleFileExport = core.getInput("tokens-export-type") !== "multiple";
 
   register(StyleDictionary, {
     excludeParentKeys: isSingleFileExport,
+    platform: "css",
     "ts/color/modifiers": {
       format: "hex",
     },
@@ -23,14 +24,14 @@ async function run(): Promise<void> {
     platforms: {
       css: {
         transformGroup: "tokens-studio",
-        transforms: ["name/kebab"],
+        transforms: ["ts/color/modifiers", "name/kebab"],
         buildPath,
         files: [
           {
             destination: "variables.css",
             format: "css/variables",
             options: {
-              outputReferences: true,
+              outputReferences: false,
             },
           },
         ],

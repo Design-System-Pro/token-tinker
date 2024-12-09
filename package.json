@@ -20,13 +20,13 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^5.1.1",
-    "@tokens-studio/sd-transforms": "^1.2.8"
+    "@tokens-studio/sd-transforms": "^1.2.9"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.10",
     "@types/node": "^18.15.11",
-    "@vercel/ncc": "^0.36.1",
+    "@vercel/ncc": "^0.38.3",
     "style-dictionary": "^4.2.0",
     "typescript": "^5.0.3"
   },
