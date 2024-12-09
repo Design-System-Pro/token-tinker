@@ -1,5 +1,11 @@
 # @design-system-pro/token-tinker
 
+## 0.1.0-next.4
+
+### Patch Changes
+
+- [`81e9eff`](https://github.com/Design-System-Pro/token-tinker/commit/81e9eff1d743763a945572d4d70ae217efe34058) Thanks [@tomasfrancisco](https://github.com/tomasfrancisco)! - remove references output to allow modifiers to run
+
 ## 0.1.0-next.3
 
 ### Patch Changes
