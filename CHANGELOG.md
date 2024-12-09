@@ -1,5 +1,11 @@
 # @design-system-pro/token-tinker
 
+## 0.1.0-next.3
+
+### Patch Changes
+
+- [`cc771a4`](https://github.com/Design-System-Pro/token-tinker/commit/cc771a47cd2c1b6152fe0a98876897708e2fd7df) Thanks [@tomasfrancisco](https://github.com/tomasfrancisco)! - add color modifier support
+
 ## 0.1.0-next.2
 
 ### Patch Changes
