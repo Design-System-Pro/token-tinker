@@ -9,6 +9,9 @@ async function run(): Promise<void> {
 
   register(StyleDictionary, {
     excludeParentKeys: isSingleFileExport,
+    "ts/color/modifiers": {
+      format: "hex",
+    },
   });
 
   const transformer = new StyleDictionary({
