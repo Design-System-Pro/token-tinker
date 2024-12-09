@@ -3,7 +3,7 @@ import { expandTypesMap, register } from "@tokens-studio/sd-transforms";
 import StyleDictionary from "style-dictionary";
 
 async function run(): Promise<void> {
-  const tokensPath = core.getInput("tokens-path") || "./example/";
+  const tokensPath = core.getInput("tokens-path") || "./tokens/";
   const buildPath = core.getInput("build-path") || "./build/";
   const isSingleFileExport = core.getInput("tokens-export-type") !== "multiple";
 
@@ -24,7 +24,8 @@ async function run(): Promise<void> {
     platforms: {
       css: {
         transformGroup: "tokens-studio",
-        transforms: ["ts/color/modifiers", "name/kebab"],
+        transforms: ["ts/color/modifiers", "ts/resolveMath", "name/kebab"],
+        mathFractionDigits: 3,
         buildPath,
         files: [
           {
