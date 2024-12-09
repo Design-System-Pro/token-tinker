@@ -1,5 +1,11 @@
 # @design-system-pro/token-tinker
 
+## 0.1.0-next.5
+
+### Patch Changes
+
+- [`27998e8`](https://github.com/Design-System-Pro/token-tinker/commit/27998e89ff88bebc5cc2a2ea4980704acb9dac4f) Thanks [@tomasfrancisco](https://github.com/tomasfrancisco)! - fix math resolution
+
 ## 0.1.0-next.4
 
 ### Patch Changes
